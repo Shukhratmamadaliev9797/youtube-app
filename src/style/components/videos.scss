@@ -1,0 +1,23 @@
+.videos {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 95%;
+  }
+  &__card {
+    width: 15%;
+    margin: 1rem;
+    &-img {
+      margin-bottom: 0.5rem;
+    }
+    &-details {
+      & > * {
+        margin-bottom: 0.5rem;
+      }
+      h5 {
+        color: #606060;
+      }
+    }
+  }
+}

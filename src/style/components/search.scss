@@ -1,0 +1,48 @@
+.search {
+  width: 100%;
+  padding: 1rem 0rem;
+  background-color: #c00;
+  display: flex;
+  align-items: center;
+  &__logo {
+    color: #fff;
+    font-family: "Ultra", serif;
+    margin-left: 2rem;
+    font-size: 1.8rem;
+  }
+  form {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    input {
+      width: 50%;
+      border-right: none;
+      padding: 0.6rem 1rem;
+      border: 1px solid #ddd;
+      border-top-left-radius: 0.3rem;
+      border-bottom-left-radius: 0.3rem;
+      outline: none;
+    }
+    button {
+      padding: 0.6rem 1rem;
+      border: 1px solid #ddd;
+      width: 10%;
+      border-left: none;
+      border-top-right-radius: 0.3rem;
+      border-bottom-right-radius: 0.3rem;
+      outline: none;
+    }
+  }
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
