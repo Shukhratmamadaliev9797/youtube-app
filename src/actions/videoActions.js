@@ -7,8 +7,7 @@ import {
   YOUTUBE_VIDEO_REQUEST,
   YOUTUBE_VIDEO_SUCCESS,
 } from "../contants/videosConstants";
-
-const KEY = "AIzaSyD8dasTk3GqvZzWnM2BKKXwL90z3rWqqMc";
+const KEY = process.env.REACT_APP_API_KEY;
 export const videoList = (term) => {
   return async (dispatch) => {
     dispatch({ type: YOUTUBE_VIDEO_REQUEST, payload: term });
