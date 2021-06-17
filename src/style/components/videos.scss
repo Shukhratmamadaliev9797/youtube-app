@@ -3,11 +3,11 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 95%;
+    margin: 1rem;
   }
   &__card {
-    width: 15%;
-    margin: 1rem;
+    width: 18%;
+    margin: 1rem 0rem;
     &-img {
       margin-bottom: 0.5rem;
     }

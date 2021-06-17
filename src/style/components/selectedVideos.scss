@@ -16,16 +16,19 @@
     }
   }
   &__videos {
-    width: 25%;
+    width: 40%;
     padding: 1rem;
 
     &__card {
+      width: 100%;
       display: flex;
       transition: all 0.4s linear;
+
       &:hover {
         transform: scale(1.1);
       }
       &-img {
+        width: 10vw;
         margin-right: 0.5rem;
       }
 

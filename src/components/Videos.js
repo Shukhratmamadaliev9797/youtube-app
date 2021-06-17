@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
@@ -6,10 +6,11 @@ export default function Videos() {
   const listVideos = useSelector((state) => state.listVideos);
 
   const { loading, error, videos } = listVideos;
+
   if (!videos) {
     return <div>Loading</div>;
   }
-  console.log(videos);
+
   const renderVideos = () => {
     return videos.items.map((video) => {
       return (
@@ -35,8 +36,14 @@ export default function Videos() {
   };
 
   return (
-    <div className="videos__container">
-      {loading ? "loading" : error ? error : renderVideos()}
-    </div>
+    <>
+      {loading ? (
+        "loading"
+      ) : error ? (
+        error
+      ) : (
+        <div className="videos__container">{renderVideos()}</div>
+      )}
+    </>
   );
 }

@@ -1,16 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { videoList } from "../actions/videoActions";
 
 export default function SearchBox(props) {
   const [term, setTerm] = useState("");
   const dispatch = useDispatch();
-  const location = useLocation();
-  console.log(location);
+
   const onSubmitHandler = (e) => {
     e.preventDefault();
-
     dispatch(videoList(term));
   };
   useEffect(() => {

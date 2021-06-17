@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function SelectedVideo(props) {
   const dispatch = useDispatch();
@@ -27,7 +27,7 @@ export default function SelectedVideo(props) {
       </div>
     );
   }
-  console.log(videos);
+
   const renderVideoList = () => {
     return videos.items.map((video) => {
       return (
@@ -42,7 +42,7 @@ export default function SelectedVideo(props) {
           </Link>
 
           <div className="selectedVideo__videos__card-details">
-            <h3>{video.snippet.title.substring(0, 30)}...</h3>
+            <h3>{video.snippet.title}</h3>
             <h4>
               Channel: <span>{video.snippet.channelTitle}</span>
             </h4>
