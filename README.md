@@ -11,7 +11,7 @@ This project was build with React, Redux and Youtube API.
   
 ## Screenshots
 
-![App Screenshot](https://www.shukhrats.com/images/projects/large/youtube-app.png)
+![App Screenshot](https://www.shukhrats.com/images/projects/large/youtube-app.png/)
 
   
 ## Lessons Learned
