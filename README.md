@@ -16,7 +16,7 @@ This project was build with React, Redux and Youtube API.
   
 ## Lessons Learned
 
-My main goal was to improve my knowledge of making external API requests and play around data.
+My main goal was to improve my knowledge of making external API requests and play around with data.
 
   
 ## Features
