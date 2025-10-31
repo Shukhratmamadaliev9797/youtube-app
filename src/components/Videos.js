@@ -10,6 +10,7 @@ export default function Videos() {
   if (!videos) {
     return <div>Loading</div>;
   }
+  console.log(videos);
 
   const renderVideos = () => {
     return videos.items.map((video) => {
@@ -25,7 +26,7 @@ export default function Videos() {
           </Link>
 
           <div className="videos__card-details">
-            <h3>{video.snippet.title.substring(0, 30)}...</h3>
+            <h3>{video.snippet.title}</h3>
             <h5>
               Channel: <span>{video.snippet.channelTitle}</span>
             </h5>

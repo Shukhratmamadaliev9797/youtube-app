@@ -4,17 +4,35 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 1rem;
+
   }
+
   &__card {
     width: 18%;
     margin: 1rem 0rem;
+
     &-img {
       margin-bottom: 0.5rem;
+
+      img {
+        border-radius: .5rem !important;
+      }
+
     }
+
     &-details {
-      & > * {
+      &>* {
         margin-bottom: 0.5rem;
       }
+
+      h3 {
+        font-family: "Momo Trust Display", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: rgb(71, 66, 66);
+      }
+
+
       h5 {
         color: #606060;
       }

@@ -15,7 +15,7 @@ export const videoList = (term) => {
         {
           params: {
             part: "snippet",
-            maxResults: 25,
+            maxResults: 50,
             key: KEY,
             type: "video",
             q: term,
